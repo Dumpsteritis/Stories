@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
-public class Stories {
+public class Stories 
+{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) 
+	{
 		{
 			Scanner keyboard = new Scanner(System.in);
 
@@ -28,38 +29,34 @@ public class Stories {
 
 				if (Street.equalsIgnoreCase("North Avenue")) 
 				{
-					System.out.println("Should I stop by 'Veggas' or 'The Gig'?");
+					System.out.println("Should I stop by 'Veggas' or 'Gig'?");
 					System.out.print(">  ");
 					Bar1 = keyboard.nextLine();
 
 					if (Bar1.equalsIgnoreCase("Veggas")) 
 					{
-						System.out.println("  ");
-						System.out.println("They're not open!");
+						Bars.Veggas();
 					} 
-					else if (Bar1.equalsIgnoreCase("The Gig")) 
+					else if (Bar1.equalsIgnoreCase("Gig")) 
 					{
-						System.out.println("  ");
-						System.out.println("It's Happy Hour!");
-					}
+						Bars.Gig();
+					} 
 				} 
 				else if (Street.equalsIgnoreCase("Locust Street")) 
 				{
-					System.out.println("Should I stop by 'The Tracks' or 'The Uptowner'?");
+					System.out.println("Should I stop by 'Tracks' or 'Uptowner'?");
 					System.out.print(">  ");
 					Bar2 = keyboard.nextLine();
 
-					if (Bar2.equalsIgnoreCase("The Tracks")) 
+					if (Bar2.equalsIgnoreCase("Tracks")) 
 					{
-						System.out.println("  ");
-						System.out.println("It's too crowded");
-					}
+						Bars.Tracks();
+					} 
 				}
-					else if (Bar2.equalsIgnoreCase("The Uptowner")) 
+					else if (Bar2.equalsIgnoreCase("Uptowner")) 
 					{
-						System.out.println("  ");
-						System.out.println("The gang's all here!");
-					}
+						Bars.Uptowner();
+					} 
 				} 
 			else if (Route.equalsIgnoreCase("City")) 
 			{
@@ -75,27 +72,31 @@ public class Stories {
 
 						if (Bar1.equalsIgnoreCase("Wolskis")) 
 						{
-							System.out.println("  ");
-							System.out.println("No pinball?");
+							Bars.Wolskis();
 						} 
 						else if (Bar1.equalsIgnoreCase("Stubbys")) 
 						{
-							System.out.println("  ");
-							System.out.println("There goes my paycheck!");
-						}
+							Bars.Stubbys();
+						} 
 						System.out.print(">  ");
-						System.out.println("Should I have 1, 2 or 3?");
+						System.out.println("How many should I have?");
 						Drinks = keyboard.nextLine();
 						switch (Drinks)
 						{
 						case "1":
-							System.out.println("Staying Sober");
+							System.out.println("Just a quick in and out!");
 							break;
 						case "2":
-							System.out.println("Going to be sociable");
+							System.out.println("Why not be sociable?");
 							break;
 						case "3":
-							System.out.println("Looks like you'll be here for awhile");
+							System.out.println("Looks like I'll be here for awhile");
+							break;
+						case "4":
+							System.out.println("Its party time!");
+							break;
+						case "5":
+							System.out.println("Let's call it a day!");
 							break;
 						default:
 							System.out.println("Maybe I better go home and work on my assignments");
@@ -108,29 +109,33 @@ public class Stories {
 						System.out.print(">  ");
 						Bar2 = keyboard.nextLine();
 
-						if (Bar2.equalsIgnoreCase("Major Goolsbys")) 
+						if (Bar2.equalsIgnoreCase("Goolsbys")) 
 						{
-							System.out.println("  ");
-							System.out.println("Too many hipsters!");
+							Bars.Goolsbys();
 						} 
 						else if (Bar2.equalsIgnoreCase("Binks")) 
 						{
-							System.out.println("  ");
-							System.out.println("Its a pinball abundanza!");
-						}
+							Bars.Binks();
+						} 
 						System.out.print(">  ");
-						System.out.println("Should I have 1, 2 or 3?");
+						System.out.println("How many should I have?");
 						Drinks = keyboard.nextLine();
 						switch (Drinks)
 						{
 						case "1":
-							System.out.println("Staying Sober");
+							System.out.println("Just a quick in and out!");
 							break;
 						case "2":
-							System.out.println("Going to be sociable");
+							System.out.println("Why not be sociable?");
 							break;
 						case "3":
-							System.out.println("Looks like you'll be here for awhile");
+							System.out.println("Looks like I'll be here for awhile");
+							break;
+						case "4":
+							System.out.println("Its party time!");
+							break;
+						case "5":
+							System.out.println("Let's call it a day!");
 							break;
 						default:
 							System.out.println("Maybe I better go home and work on my assignments");
