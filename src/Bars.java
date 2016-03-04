@@ -35,9 +35,33 @@ public class Bars {
 		System.out.println("  ");
 		System.out.println("Too many hipsters!");
 	} 
-	public static void Binks()
+	public static void Finks()
 	{
 		System.out.println("  ");
 		System.out.println("Its a pinball abundanza!");
+	}
+	public static void noDrinks(String Drinks)
+	{
+	switch (Drinks)
+	{
+	case "1":
+		System.out.println("Just a quick in and out!");
+		break;
+	case "2":
+		System.out.println("Why not be sociable?");
+		break;
+	case "3":
+		System.out.println("Looks like I'll be here for awhile");
+		break;
+	case "4":
+		System.out.println("Its party time!");
+		break;
+	case "5":
+		System.out.println("Let's call it a day!");
+		break;
+	default:
+		System.out.println("Maybe I better go home and work on my assignments");
+		break;
+	}
 	}
 }
