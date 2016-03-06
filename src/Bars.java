@@ -1,66 +1,69 @@
 
 public class Bars {
+
 	public static void Veggas()
 	{
-	System.out.println("  ");
-	System.out.println("They're not open!");
+	System.out.print("They're not open! \n");
 	}
+
 	public static void Gig()
-	{
-	System.out.println("  ");
-	System.out.println("It's Happy Hour!");
+	{	
+	System.out.print("It's Happy Hour! \n");
 	}		
+
 	public static void Tracks()
-	{
-		System.out.println("  ");
-		System.out.println("It's too crowded");
+	{	
+		System.out.print("It's looking pretty dead! \n");
 	}
+
 	public static void Uptowner()
-	{
-		System.out.println("  ");
-		System.out.println("The gang's all here!");
+	{	
+		System.out.print("The gang's all here! \n");
 	}
+
 	public static void Wolskis()
-	{
-		System.out.println("  ");
-		System.out.println("No pinball?");
+	{	
+		System.out.print("No pinball? \n");
 	}
+
 	public static void Stubbys()
-	{
-		System.out.println("  ");
-		System.out.println("There goes my paycheck!");
+	{	
+		System.out.print("Great, a $4.00 tap of Schlitz what a travesty! \n");
 	}
+
 	public static void Goolsbys()
-	{
-		System.out.println("  ");
-		System.out.println("Too many hipsters!");
+	{	
+		System.out.print("Too many hipsters! \n");
+		System.out.print("> ");
 	} 
+
 	public static void Finks()
-	{
-		System.out.println("  ");
-		System.out.println("Its a pinball abundanza!");
+	{	
+		System.out.print("Its a pinball abundanza! \n");
+		System.out.print("> ");
 	}
+
 	public static void noDrinks(String Drinks)
 	{
 	switch (Drinks)
 	{
 	case "1":
-		System.out.println("Just a quick in and out!");
+		System.out.print("Just a quick in and out! \n");
 		break;
 	case "2":
-		System.out.println("Why not be sociable?");
+		System.out.print("Why not be sociable! \n");
 		break;
 	case "3":
-		System.out.println("Looks like I'll be here for awhile");
+		System.out.print("Is that woman the same one as when I got here? \n");
 		break;
 	case "4":
-		System.out.println("Its party time!");
+		System.out.print("Its party time! \n");
 		break;
 	case "5":
-		System.out.println("Let's call it a day!");
+		System.out.print("I'm not getting out of here alive! \n");
 		break;
 	default:
-		System.out.println("Maybe I better go home and work on my assignments");
+		System.out.print("Maybe I better just go home and work on my assignments! \n");
 		break;
 	}
 	}
