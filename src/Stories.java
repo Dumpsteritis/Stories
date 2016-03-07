@@ -12,10 +12,10 @@ public class Stories {
 			String Bar2 = "";
 			String Drinks = "";
 
-			System.out.println("WHERE SHOULD I STOP FOR BEER");
+			System.out.println("WHERE CAN I STOP FOR A BEER?");
 			System.out.println("  ");
 			System.out.println(
-					" You need to stop for a beer on the drive home. Are you planning on driving the 'Interstate' or 'City' streets? ");
+					"You need to stop for a beer on the drive home. Are you planning on driving the 'Interstate' or 'City' streets? ");
 			System.out.print("> ");
 			Route = keyboard.nextLine();
 
