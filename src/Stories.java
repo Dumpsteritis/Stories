@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Stories {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
 		{
 			Scanner keyboard = new Scanner(System.in);
 
@@ -24,68 +24,88 @@ public class Stories {
 				System.out.print(">  ");
 				Street = keyboard.nextLine();
 
-				if (Street.equalsIgnoreCase("North Avenue")) {
+				if (Street.equalsIgnoreCase("North Avenue")) 
+				{
 					System.out.println("Should I stop by 'Veggas' or 'Gig'?");
 					System.out.print(">  ");
 					Bar1 = keyboard.nextLine();
 
-					if (Bar1.equalsIgnoreCase("Veggas")) {
+					if (Bar1.equalsIgnoreCase("Veggas")) 
+					{
 						Bars.Veggas();
-					} else if (Bar1.equalsIgnoreCase("Gig")) {
+					} 
+					else if (Bar1.equalsIgnoreCase("Gig")) 
+					{
 						Bars.Gig();
 					}
-				} else if (Street.equalsIgnoreCase("Locust Street")) {
+					System.out.println("How many should I have?");
+					Drinks = keyboard.nextLine();
+					Bars.noDrinks(Drinks);
+				} 
+				else if (Street.equalsIgnoreCase("Locust Street")) 
+				{
 					System.out.println("Should I stop by 'Tracks' or 'Uptowner'?");
 					System.out.print(">  ");
 					Bar2 = keyboard.nextLine();
 
-					if (Bar2.equalsIgnoreCase("Tracks")) {
+					if (Bar2.equalsIgnoreCase("Tracks")) 
+					{
 						Bars.Tracks();
+					} 
+					else if (Bar2.equalsIgnoreCase("Uptowner")) 
+					{
+						Bars.Uptowner();
 					}
-				} else if (Bar2.equalsIgnoreCase("Uptowner")) {
-					Bars.Uptowner();
+					System.out.println("How many should I have?");
+					Drinks = keyboard.nextLine();
+					Bars.noDrinks(Drinks);
+					}
 				}
-				System.out.print(">  ");
-				System.out.println("How many should I have?");
-				Drinks = keyboard.nextLine();
-				Bars.noDrinks(Drinks);
-			} 
-			else if (Route.equalsIgnoreCase("City")) {
+			else if (Route.equalsIgnoreCase("City")) 
+			{
 				System.out.println("Should I take '4th Street' or '6th Street'? ");
 				System.out.print(">  ");
 				Street = keyboard.nextLine();
 
-				if (Street.equalsIgnoreCase("4th Street")) {
+				if (Street.equalsIgnoreCase("4th Street")) 
+				{
 					System.out.println("Should I stop by 'Wolskis' or 'Stubbys'?");
 					System.out.print(">  ");
 					Bar1 = keyboard.nextLine();
 
-					if (Bar1.equalsIgnoreCase("Wolskis")) {
+					if (Bar1.equalsIgnoreCase("Wolskis")) 
+					{
 						Bars.Wolskis();
-					} else if (Bar1.equalsIgnoreCase("Stubbys")) {
+					} 
+					else if (Bar1.equalsIgnoreCase("Stubbys")) 
+					{
 						Bars.Stubbys();
 					}
-					System.out.print(">  ");
 					System.out.println("How many should I have?");
 					Drinks = keyboard.nextLine();
 					Bars.noDrinks(Drinks);
 				}
-				else if (Street.equalsIgnoreCase("6th Street")) {
-				System.out.println("Should I stop by 'Major Goolsbys' or 'Finks'?");
-				System.out.print(">  ");
-				Bar2 = keyboard.nextLine();
+				else if (Street.equalsIgnoreCase("6th Street")) 
+				{
+					System.out.println("Should I stop by 'Goolsbys' or 'Finks'?");
+					System.out.print(">  ");
+					Bar2 = keyboard.nextLine();
 
-				if (Bar2.equalsIgnoreCase("Goolsbys")) {
-					Bars.Goolsbys();
-				} else if (Bar2.equalsIgnoreCase("Finks")) {
-					Bars.Finks();
-				}
-				System.out.println("How many should I have?");
-				System.out.print("> ");
-				Drinks = keyboard.nextLine();
-				Bars.noDrinks(Drinks);
+					if (Bar2.equalsIgnoreCase("Goolsbys")) 
+					{
+						Bars.Goolsbys();
+					} 
+					else if (Bar2.equalsIgnoreCase("Finks")) 
+					{
+						Bars.Finks();
+					}
+					System.out.println("How many should I have?");
+					Drinks = keyboard.nextLine();
+					Bars.noDrinks(Drinks);
+					}
 				}
 			}
-		}
-	}
 }
+
+
+
