@@ -9,7 +9,7 @@ public class Bars {
 
 	public static void Gig()
 	{	
-	System.out.print("Going to need change for the pinball machines! \n");
+	System.out.print("Going to need change for the pinball machine! \n");
 	System.out.print("> ");
 	}		
 
@@ -51,32 +51,32 @@ public class Bars {
 
 	public static void noDrinks(String Drinks)
 	{
-	switch (Drinks)
-	{
-	case "1":
-		System.out.print("Just a quick in and out! \n");
-		break;
-	case "2":
-		System.out.print("Why not be sociable? \n");
-		break;
-	case "3":
-		System.out.print("Is that the same woman I saw as when I got here? \n");
-		break;
-	case "4":
-		System.out.print("Its party time! \n");
-		break;
-	case "5":
-		System.out.print("I'm going to feel it in the morning! \n");
-		break;
-	case "6":
-		System.out.print("Better call the wife! \n");
-		break;
-	case "7":
-		System.out.print("Can I leave my car where its parked? \n");
-		break;
-	default:
-		System.out.print("Maybe I better just go home and work on my assignments! \n");
-		break;
-	}
+		switch (Drinks)
+		{
+		case "1":
+			System.out.print("Just a quick in and out! \n");
+			break;
+		case "2":
+			System.out.print("Why not be sociable? \n");
+			break;
+		case "3":
+			System.out.print("Is that the same woman I saw as when I got here? \n");
+			break;
+		case "4":
+			System.out.print("Its party time! \n");
+			break;
+		case "5":
+			System.out.print("I'm going to feel it in the morning! \n");
+			break;
+		case "6":
+			System.out.print("Better call the wife! \n");
+			break;
+		case "7":
+			System.out.print("Can I leave my car where its parked? \n");
+			break;
+		default:
+			System.out.print("Maybe I better just go home and work on my assignments! \n");
+			break;
+		}
 	}
 }
